@@ -216,13 +216,15 @@ else:
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # ALLOWED_HOSTS = ["localhost", '127.0.0.1',]
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["localhost", '127.0.0.1', '31.170.165.140', 'sunhilllms.online']
 
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:5173',
     "http://localhost:3000",
     "http://127.0.0.1:3000",
     "http://127.0.0.1:5173",
+    'http://31.170.165.140',
+    'http://sunhilllms.online',
 ]
 
 CORS_ALLOW_CREDENTIALS = True
