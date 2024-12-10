@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from user_teacher.models.quizzes_models import Quiz, StudentResponse
+from .models.quizzes_models import Quiz, StudentResponse
 
 class QuizTimeAnalyticsSerializer(serializers.ModelSerializer):
     submission_count = serializers.IntegerField()
