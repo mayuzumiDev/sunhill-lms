@@ -172,4 +172,4 @@ class QuizListView(generics.ListAPIView):
         return JsonResponse({
             'message': 'Quizzes retrieved successfully',
             'quizzes': serializer.data
-        }, status=status.HTTP_200_OK)
+        }, status=status.HTTP_200_OK, json_dumps_params={'ensure_ascii': False})
