@@ -277,6 +277,8 @@ SESSION_COOKIE_SAMESITE = 'Lax'
 
 CSRF_COOKIE_SAMESITE = 'Lax'
 
+DEFAULT_CHARSET = 'utf-8'
+
 # Email settings
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
