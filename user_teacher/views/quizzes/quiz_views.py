@@ -168,8 +168,8 @@ class QuizListView(generics.ListAPIView):
         serializer = self.get_serializer(queryset, many=True)
         
         print(serializer.data)
-
-        return JsonResponse({
+        
+        return Response({
             'message': 'Quizzes retrieved successfully',
             'quizzes': serializer.data
-        }, status=status.HTTP_200_OK, json_dumps_params={'ensure_ascii': False})
+        }, status=status.HTTP_200_OK)
